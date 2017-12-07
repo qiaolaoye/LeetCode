@@ -19,7 +19,7 @@ public class Solution013 {
         return total;
     }
 
-    public static int charToInt(char c) {
+    private static int charToInt(char c) {
         int data = 0;
 
         switch (c) {
