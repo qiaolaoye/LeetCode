@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.leetcode.chapter01;
 
 public class Solution026 {
 

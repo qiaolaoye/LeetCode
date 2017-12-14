@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.leetcode.chapter01;
 
 /**
  * If there are duplicate elements equal to target, my code will always return the one with smallest index.
