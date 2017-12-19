@@ -21,16 +21,17 @@ public class Solution101 {
         else return false;
     }
 
+
     // Iterative solution.
     public static boolean isSymmetric_(TreeNode root) {
         if (root == null || (root.left == null && root.right == null)) return true;
 
-        Queue<TreeNode> q1 = new LinkedList<>();
-        Queue<TreeNode> q2 = new LinkedList<>();
-        q1.offer(root.left);
+        Queue<TreeNode> q1 = new LinkedList<>(); // store left TreeNode.
+        Queue<TreeNode> q2 = new LinkedList<>(); // store right TreeNode.
+        q1.offer(root.left); // add()
         q2.offer(root.right);
         while(!q1.isEmpty() && !q2.isEmpty()) {
-            TreeNode p = q1.poll();
+            TreeNode p = q1.poll(); // remove()
             TreeNode q = q2.poll();
             if (p == null) {
                 if (q != null) return false;
