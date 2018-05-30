@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Solution160 {
+
     public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null) return null;
 
