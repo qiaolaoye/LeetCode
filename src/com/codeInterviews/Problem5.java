@@ -1,8 +1,6 @@
-package com.codingInterviews;
+package com.codeInterviews;
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Deque;
 
 public class Problem5 {
 

@@ -1,4 +1,4 @@
-package com.codingInterviews;
+package com.codeInterviews;
 
 public class TreeNode {
     int val;

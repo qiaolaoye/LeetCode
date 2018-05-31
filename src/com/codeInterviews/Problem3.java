@@ -1,4 +1,4 @@
-package com.codingInterviews;
+package com.codeInterviews;
 
 public class Problem3 {
     public boolean Find(int target, int[][] array) {
