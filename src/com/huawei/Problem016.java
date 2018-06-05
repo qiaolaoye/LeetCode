@@ -23,7 +23,7 @@ public class Problem016 {
                 for (int j = price[i]; j <= maxPriceLimited; j++) {
                     // 如果是附件
                     if (flag[i] > 0) {
-                        if (j > price[i] + price[flag[i]])
+                        if (j >= price[i] + price[flag[i]])
                             dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - price[i]] + price[i] * weight[i]);
                     }
                     else {
@@ -39,9 +39,17 @@ public class Problem016 {
 
 
 //            int[] dp = new int[maxPriceLimited + 1];
-//            for (int i = 1; i < num; i++) {
-//                for (int j = maxPriceLimited; j >= v[i]; j--) {
-//                    dp[j] = Math.max(dp[j], dp[maxPriceLimited - v[i]] + p[i] * v[i]);
+//            for (int i = 1; i <= num; i++) {
+//                for (int j = maxPriceLimited; j >= price[i]; j--) {
+//                    // 如果是附件
+//                     if (flag[i] > 0) {
+//                         if (j >= price[i] + price[flag[i]])
+//                             dp[j] = Math.max(dp[j], dp[j - price[i]] + price[i] * weight[i]);
+//                     }
+//                     else {
+//                         if (j >= price[i])
+//                             dp[j] = Math.max(dp[j], dp[j - price[i]] + price[i] * weight[i]);
+//                     }
 //                }
 //            }
 //            System.out.println(dp[maxPriceLimited]);
